@@ -1,13 +1,9 @@
 package serial_port_test_01;
-import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
-import java.util.UUID;
-
 import com.fazecast.jSerialComm.SerialPort;
 
 public class serialSend {
-public static void send() {
+public static void send(String outstr,String comPortPath) {
 
 	SerialPort comPort = SerialPort.getCommPort("/dev/ttyACM0");
 	comPort.openPort();
@@ -16,7 +12,9 @@ public static void send() {
 
 	try {
 		
-			String outstr=UUID.randomUUID().toString();
+			//String outstr=UUID.randomUUID().toString();
+			//String outstr=UUID.randomUUID().toString();
+
 			System.out.println(">>"+outstr);
 			out.write(outstr.getBytes());
 			out.flush();
