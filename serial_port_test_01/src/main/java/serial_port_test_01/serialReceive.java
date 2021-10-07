@@ -7,7 +7,7 @@ import java.util.UUID;
 
 import com.fazecast.jSerialComm.SerialPort;
 
-public class serial_receive {
+public class serialReceive {
 	public static void receive() {
 
 		SerialPort comPort = SerialPort.getCommPort("/dev/ttyACM0");

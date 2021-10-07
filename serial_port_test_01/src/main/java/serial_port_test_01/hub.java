@@ -11,11 +11,14 @@ public class hub {
 		/*
 		 * constinuously scan for connected irrigation device
 		 */
-		//continuousPortScanner cPS=new continuousPortScanner();
-		//cPS.start();
+
+		//IrrigationSerialDevice S=new SerialSendReceive();
+		continuousPortScanner cPs=new continuousPortScanner();
+		cPs.start();
 		
-		serialSend.send("some text", "/dev/ttyACM0");
-			 
+		//serialSend.send("some text", "/dev/ttyACM0");
+		//serialSend.send();
+	 
 	}
 
 }

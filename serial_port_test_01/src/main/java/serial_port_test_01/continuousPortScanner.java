@@ -5,8 +5,10 @@ package serial_port_test_01;
  * */
 
 public class continuousPortScanner extends Thread {
+	
+	IrrigationSerialDevice ISD;
 	continuousPortScanner() {
-
+		ISD=new SerialSendReceive();
 	}
 
 	public void run() {
@@ -18,12 +20,16 @@ public class continuousPortScanner extends Thread {
 				portPath=listSerialPorts.listAllSerialPorts();
 				if (!portPath.isEmpty()) {
 					System.out.println("Irrigation Device present  "+portPath );
-					serialSend.send("some text", portPath);
+				//if(true) {
+					ISD.send("  some text ");
+					Thread.sleep(2000);
+					ISD.receive();
+					Thread.sleep(2000);
+
 				} else {
 					System.out.println("irrigation device not found");
 				}
 
-				Thread.sleep(5000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
