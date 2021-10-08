@@ -54,6 +54,7 @@ public class SerialSendReceive implements IrrigationSerialDevice {
 
 	public void receive() {
 		try {
+			//TODO message sanity check
 
 			// System.out.println("available "+ in.available());
 			// System.out.println((char)in.read());
