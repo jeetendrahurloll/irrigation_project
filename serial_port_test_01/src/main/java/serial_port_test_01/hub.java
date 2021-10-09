@@ -5,6 +5,8 @@ import java.io.InputStream;
 
 import com.fazecast.jSerialComm.SerialPort;
 
+import dataFilters.headTailRemover;
+
 public class hub {
 
 	public static void main(String[] args) {
@@ -12,12 +14,14 @@ public class hub {
 		 * constinuously scan for connected irrigation device
 		 */
 
-		//IrrigationSerialDevice S=new SerialSendReceive();
-		continuousPortScanner cPs=new continuousPortScanner();
-		cPs.start();
+		//continuousPortScanner cPs=new continuousPortScanner();
+		//cPs.start();
+
+		headTailRemover htr=new headTailRemover();
+		String S="sdfasdfHEAD559lsjfljsldfj"
+				+ "TAIL559asdfasfa";
+		htr.arduinoData(S);
 		
-		//serialSend.send("some text", "/dev/ttyACM0");
-		//serialSend.send();
 	 
 	}
 

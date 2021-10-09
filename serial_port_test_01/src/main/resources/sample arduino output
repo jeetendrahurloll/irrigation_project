@@ -1,0 +1,43 @@
+from arduinoz .. HEAAIL480
+HEAD725TAIL725
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 82 
+from arduinoz .. HEAD559  some text 82 TAIL559
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 13 
+from arduinoz .. HEAD123  some text 13 TAIL123
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 95 
+from arduinoz .. HEAD257  some text 95 TAIL257
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 67 
+from arduinoz .. HEAD276  some text 67 TAIL276
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 14 
+from arduinoz .. HEAD210  some text 14 TAIL210
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 30 
+from arduinoz .. HEAD721  some text 30 TAIL721
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 70 
+from arduinoz .. HEAD214  some text 70 TAIL214
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 14 
+from arduinoz .. HEAD390  some text 14 TAIL390
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 79 
+from arduinoz .. HEAD953  some text 79 TAIL953
+ nnn  0
+Irrigation Device present  /dev/ttyACM0
+>>  some text 62 
+from arduinoz .. HEAD529  some text 62 TAIL529
+ nnn  0

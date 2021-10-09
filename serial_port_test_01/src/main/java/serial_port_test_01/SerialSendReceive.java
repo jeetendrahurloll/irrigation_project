@@ -45,9 +45,10 @@ public class SerialSendReceive implements IrrigationSerialDevice {
 			// out.close();
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 
 			// todo error handler in case serial port permission not set
+			System.out.println("send error");
 		}
 
 	}
@@ -56,20 +57,19 @@ public class SerialSendReceive implements IrrigationSerialDevice {
 		try {
 			//TODO message sanity check
 
-			// System.out.println("available "+ in.available());
-			// System.out.println((char)in.read());
+
 			byte[] buffer = new byte[in.available()];
-			int v = in.read(buffer);
-			// in.close();
+			int v = in.read(buffer);		
 			String string = new String(buffer);
 			System.out.println("from arduinoz .. " + string + " nnn  " + in.available());
-			System.out.println("available" + in.available());
-			System.out.println("available" + in.available());
+			//System.out.println("available" + in.available());
+			//System.out.println("available" + in.available());
 
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			// todo error handler in case serial port permission not set
+			System.out.println("receive error");
 
 		}
 
